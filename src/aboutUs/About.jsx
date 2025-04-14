@@ -6,7 +6,7 @@ function About() {
     <div>
       <Navbar useName="Juma Batoor" />
       <div>
-        <h1 className=" bg-amber-400 font-bold text-4xl">
+        <h1 className=" bg-amber-400 font-bold text-4xl text-amber-800">
           Welcome to About Us Us Page
         </h1>
       </div>

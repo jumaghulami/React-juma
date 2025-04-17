@@ -6,9 +6,7 @@ import Footer from "../../shop-bike/footer/Footer";
 function Home() {
   return (
     <div>
-      <Navbar useName="Juma Batoor" />
       <Main />
-      <Footer />
     </div>
   );
 }

@@ -4,19 +4,6 @@ import ContactInfo from "../components/contactInfo/ContactInfo";
 import MySelect from "../components/mySelect/MySelect";
 import { GoCommit } from "react-icons/go";
 
-// const contactSchema = z.object({
-//   name: z.string().min(3, "نام باید حداقل ۳ حرف باشد"),
-//   email: z.string().email("لطفاً ایمیل معتبر وارد کنید"),
-//   subject: z.string().min(1, "موضوع را انتخاب کنید"),
-//   comment: z.string().min(5, "نظر شما باید حداقل ۵ حرف داشته باشد"),
-// });
-
-// const contactSchema = z.object({
-//   name: z.string().min(3, "name must be 3 number"),
-//   email: z.string().email("please Enter yout email"),
-//   subject: z.string().min(1, "chose your subject"),
-//   comment: z.string().min(5, "your comment must be 5 number"),
-// });
 const contactSchema = z.object({
   name: z.string().min(3, "name must be 3 number"),
   email: z.string().email("please Enter your email"),

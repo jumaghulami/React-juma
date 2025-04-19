@@ -103,13 +103,13 @@ const Services = () => {
               onKeyDown={(e) => e.key === "Enter" && handleSend()}
               className="flex-1 border border-gray-300 rounded-full px-4 py-2 focus:outline-none"
               type="text"
-              placeholder="پیامت را بنویس..."
+              placeholder="Write Your Messages..."
             />
             <button
               onClick={handleSend}
               className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600"
             >
-              ارسال
+              Send
             </button>
           </div>
         </div>

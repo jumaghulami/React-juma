@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import About from "../../aboutUs/About";
 
 const Services = () => {
   const [messages, setMessages] = useState([]);
@@ -45,7 +46,7 @@ const Services = () => {
   };
   return (
     <>
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+      <div className="  min-h-screen bg-gray-100 flex items-center justify-center p-4">
         <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-4">
           <div className="h-96 overflow-y-auto space-y-2 mb-4">
             {messages.map((msg) => (
@@ -113,6 +114,9 @@ const Services = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className=" bg-gray-500 py-10">
+        <About />
       </div>
     </>
   );

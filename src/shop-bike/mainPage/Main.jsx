@@ -11,7 +11,7 @@ const slides = [
     id: 2,
     image: "/images/bike.jpg",
     title: "Kavasaki",
-    bio: "Sport Motorcycle",
+    code: "Sport Motorcycle",
   },
   {
     id: 3,
@@ -87,6 +87,7 @@ export default function ImageSlideshow() {
           ))}
         </div>
       </div>
+      {/* the next part of the all all the time */}
     </div>
   );
 }

@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Juma Hazara",
+      "email": "jumabatoor@gmail.com",
+      "images": "/images/batoor.png"
+    },
+    {
+      "id": 1,
+      "name": "Juma Hazara",
+      "email": "jumabatoor@gmail.com",
+      "images": "/images/batoor.png"
+    },
+    {
+      "id": 1,
+      "name": "Juma Hazara",
+      "email": "jumabatoor@gmail.com",
+      "images": "/images/batoor.png"
+    },
+    {
+      "id": 1,
+      "name": "Juma Hazara",
+      "email": "jumabatoor@gmail.com",
+      "images": "/images/batoor.png"
+    },
+    {
+      "id": "7d53",
+      "name": "juma khan",
+      "email": "jumabatoor@gmail"
+    }
+  ]
+}

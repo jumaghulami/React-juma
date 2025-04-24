@@ -1,16 +1,19 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 function Project1() {
   const [user, setUser] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3002/users")
-      .then((res) => res.json())
-      .then((data) => {
-        setUser(data);
+    axios("http://localhost:3002/users")
+      .then((res) => {
+        setUser(res.data);
+        setLoading(false);
       })
-      .catch((error) => console.log("catch data from data", error));
-  });
+      .catch((error) => console.log("error not catch", error));
+    setLoading(false);
+  }, []);
 
   return (
     <div>
@@ -20,9 +23,9 @@ function Project1() {
             <p>{item.name}</p>
             <p>{item.email}</p>
             <img
-              className=" mb-5 w-10 h-10 rounded-full    "
+              className=" mb-5 w-10 h-10 rounded-full"
               src={item.images}
-              alt=""
+              alt="front-developer"
             />
           </div>
         ))}

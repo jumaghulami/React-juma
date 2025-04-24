@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa"; // Icons from react-icons
+import { href } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,7 @@ const Navbar = () => {
     { name: "Project1", href: "/project1" },
     { name: "Project2", href: "/project2" },
     { name: "Project3", href: "/project3" },
+    { name: "Porjecr4", href: "/project4" },
   ];
 
   const handleSelectChange = (e) => {

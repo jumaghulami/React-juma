@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: "Project2", href: "/project2" },
     { name: "Project3", href: "/project3" },
     { name: "Porjecr4", href: "/project4" },
+    { name: "Porjecr5", href: "/project5" },
   ];
 
   const handleSelectChange = (e) => {
@@ -67,7 +68,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center ">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-600 hover:text-gray-800"

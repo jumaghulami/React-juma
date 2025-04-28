@@ -10,6 +10,7 @@ import Project1 from "./project/project1/Project1";
 import Project2 from "./project/project2/Project2";
 import Project3 from "./project/project3/Project3";
 import Project4 from "./project/project4/Project4";
+import Project5 from "./project/project5/Project5";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/project2" element={<Project2 />} />
           <Route path="/project3" element={<Project3 />} />
           <Route path="/project4" element={<Project4 />} />
+          <Route path="/project5" element={<Project5 />} />
         </Routes>
         <Footer />
       </div>

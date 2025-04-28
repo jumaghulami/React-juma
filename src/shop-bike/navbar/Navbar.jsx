@@ -18,6 +18,7 @@ const Navbar = () => {
     { name: "Project3", href: "/project3" },
     { name: "Porjecr4", href: "/project4" },
     { name: "Porjecr5", href: "/project5" },
+    { name: "Project6", href: "/project6" },
   ];
 
   const handleSelectChange = (e) => {

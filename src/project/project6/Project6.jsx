@@ -5,15 +5,13 @@ function Project6() {
   const [input, setInput] = useState("");
 
   const handleAddClick = (e) => {
-    e.preventDefault();
-
+    e.preventDefault(e);
     if (input.trim() !== "") {
       setAdd([...add, input]);
       setInput("");
     }
   };
-
-  const handleDelete = (index) => {
+  const handleSelectChange = (index) => {
     const addNew = add.filter((_, i) => i !== index);
     setAdd(addNew);
   };
@@ -46,7 +44,7 @@ function Project6() {
                   <div className=" border flex justify-between items-center min-w-sm mb-2">
                     <span className=" px-2"> {item}</span>
                     <button
-                      onClick={() => handleDelete(index)}
+                      onClick={() => handleSelectChange(index)}
                       className=" bg-red-500 hover:bg-red-600 rounded-r-lg text-white font-semibold px-4 py-1"
                     >
                       delete

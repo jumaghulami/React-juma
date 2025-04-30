@@ -1,60 +1,51 @@
 import React, { useState } from "react";
 
 function Project6() {
-  const [add, setAdd] = useState([]);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState({});
 
-  const handleAddClick = (e) => {
-    e.preventDefault(e);
-    if (input.trim() !== "") {
-      setAdd([...add, input]);
-      setInput("");
-    }
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const age = e.target.value;
+    setInput((khan) => ({ ...khan, [name]: age }));
   };
-  const handleSelectChange = (index) => {
-    const addNew = add.filter((_, i) => i !== index);
-    setAdd(addNew);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(input);
   };
 
   return (
-    <div className=" h-screen">
-      <div className=" text-center ">
-        <p>welcome to my six project</p>
+    <div className=" h-screen flex justify-center py-10">
+      <div>Welcome to my Page:::</div>
 
-        <div className=" ">
-          <form onSubmit={handleAddClick} className=" ">
-            <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              type="text"
-              placeholder="Enter some things..."
-              className=" px-2 py-1 border rounded-l-lg "
-            />
-            <button
-              type="submit"
-              className=" bg-blue-500 hover:bg-blue-600 rounded-r-lg text-white font-semibold px-4 py-1"
-            >
-              Add
-            </button>
-          </form>
-          <div className=" ">
-            <ul className="">
-              {add.map((item, index) => (
-                <li key={index} className=" flex justify-center items-center ">
-                  <div className=" border flex justify-between items-center min-w-sm mb-2">
-                    <span className=" px-2"> {item}</span>
-                    <button
-                      onClick={() => handleSelectChange(index)}
-                      className=" bg-red-500 hover:bg-red-600 rounded-r-lg text-white font-semibold px-4 py-1"
-                    >
-                      delete
-                    </button>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
+      <div className=" border min-w-lg p-5   ">
+        <form
+          onSubmit={handleSubmit}
+          className=" flex flex-col  justify-center items-center "
+        >
+          <input
+            name="userName"
+            value={input.userName || ""}
+            onChange={handleChange}
+            type="text"
+            placeholder="Enter your useName"
+            className="border px-2 mb-5"
+          />
+          <input
+            name="age"
+            value={input.age || ""}
+            onChange={handleChange}
+            type="number"
+            placeholder="Enter your Age"
+            className="border px-2 mb-5"
+          />
+          <button
+            className=" px-5 py-1  bg-blue-600 rounded-lg text-white font-semibold"
+            type="submit"
+          >
+            Rigesster
+          </button>
+        </form>
       </div>
     </div>
   );

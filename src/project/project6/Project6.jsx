@@ -15,7 +15,7 @@ function Project6() {
   };
 
   return (
-    <div className=" h-screen flex justify-center py-10">
+    <div className=" h-screen flex justify-center py-12">
       <div>Welcome to my Page:::</div>
 
       <div className=" border min-w-lg p-5   ">
@@ -40,7 +40,7 @@ function Project6() {
             className="border px-2 mb-5"
           />
           <button
-            className=" px-5 py-1  bg-blue-600 rounded-lg text-white font-semibold"
+            className=" px-5 py-1  bg-blue-500 rounded-lg text-white font-semibold"
             type="submit"
           >
             Rigesster

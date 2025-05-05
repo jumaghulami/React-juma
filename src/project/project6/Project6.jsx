@@ -43,7 +43,7 @@ function Project6() {
             className=" px-5 py-1  bg-blue-500 rounded-lg text-white font-semibold"
             type="submit"
           >
-            Rigesster
+            Rigessters
           </button>
         </form>
       </div>

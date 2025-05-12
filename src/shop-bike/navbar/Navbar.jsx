@@ -41,7 +41,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className=" border p-2 rounded-lg shadow border-gray-300 text-gray-500 ">
-            <h1>usr Dark Mode</h1>
+            <h1>usr Dark Mode and dark ode</h1>
           </div>
 
           {/* Desktop links + Select Option */}
